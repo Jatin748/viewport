@@ -15,7 +15,6 @@ const Solution = () => {
     console.log(isInView);
   }, [isInView, mainControls]);
 
-  const subtitleData = [{ id: 1, icon: "", subtitle: "Clients" }, {}];
   return (
     <section className="mx-auto max-w-[90rem] bg-[#f1f3f5] rounded-3xl p-10">
       <div className="space-y-8 mx-auto max-w-2xl">

@@ -7,7 +7,6 @@ import Review from './components/Review';
 import Solution from './components/Solution';
 import Sharing from './components/Sharing';
 import UseCases from './components/UseCases';
-import Values from './components/Values';
 import Contact from './components/Contact';
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
       <Solution />
       <Sharing />
       <UseCases />
-      <Values />
       <Contact />
       <Footer />
     </div>

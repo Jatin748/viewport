@@ -10,23 +10,25 @@ const AnimatedDiv = (props) => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // Trigger animation when the element is in view
             controls.start("visible");
           }
         });
       },
-      {
-        threshold: 0.9, // Adjust the threshold as needed
-      }
+      { threshold: 0.9 }
     );
 
-    observer.observe(ref.current);
+    const currentRef = ref.current;
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
 
     return () => {
-      // Clean up the observer when the component unmounts
-      observer.unobserve(ref.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
     };
   }, [controls]);
+
   return (
     <div>
       <motion.div
@@ -37,7 +39,7 @@ const AnimatedDiv = (props) => {
           visible: { opacity: 1, y: 0 },
           hidden: { opacity: 0, y: 100 },
         }}
-        transition={{ type: "keyframes" }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
         {...props}
       />
     </div>
