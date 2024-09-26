@@ -52,13 +52,13 @@ const Hero = () => {
     // parent for section
     <section
       id="hero-section"
-      className="flex items-center justify-center rounded-3xl bg-gradient-to-br from-[#271c45] via-[#4d4dff] to-[#00caf2] mx-auto max-w-sm md:max-w-[95%] h-screen "
+      className="flex items-center justify-center rounded-3xl bg-gradient-to-br from-[#271c45] via-[#4d4dff] to-[#00caf2] mx-auto max-w-md md:max-w-[95%]"
     >
       {/* parent for flex */}
-      <motion.div className="flex justify-around items-center mx-auto max-w-5xl">
+      <motion.div className="md:flex md:flex-row flex-col justify-around items-center mx-auto max-w-5xl">
         {/* left-hero-content-start */}
-        <div className="text-white w-1/2 space-y-5">
-          <h1 className="text-[32px] font-bold">
+        <div className="text-white p-5 md:p-0 md:w-1/2 space-y-5">
+          <h1 className="text-[25px] md:text-[32px] font-bold">
             Your design community for work-in-progress
           </h1>
           <p className="text-lg font-medium">
@@ -78,7 +78,7 @@ const Hero = () => {
           whileHover="animate"
           className="relative p-10"
         >
-          <div className="relative bg-[#fff3] h-20 -top-12 rounded-b-2xl"></div>
+          <div className="relative bg-[#fff3] h-20 -top-12 rounded-b-2xl hidden md:block"></div>
           {/* disappear on hover-start */}
           <motion.div
             variants={reverseAnimation}
@@ -165,7 +165,7 @@ const Hero = () => {
               Updated the 3D logo. Thoughts?
             </span>
           </div>
-          <div className="relative bg-[#fff3] h-20 -bottom-12 rounded-t-2xl"></div>
+          <div className="relative bg-[#fff3] h-20 -bottom-12 rounded-t-2xl hidden md:block"></div>
         </motion.div>
         {/* right-hero-content-end */}
       </motion.div>

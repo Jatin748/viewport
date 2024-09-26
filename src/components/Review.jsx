@@ -115,7 +115,7 @@ const Review = () => {
     },
   };
   return (
-    <section className="mx-auto max-w-3xl flex-col justify-center items-center">
+    <section className="mx-auto max-w-3xl flex-col justify-center items-center pt-10">
       <div className="space-y-10 p-4">
         <div className="flex items-center justify-center">
           <p className="uppercase text-sm font-semibold text-[#4d4dff] bg-[#4d4dff26] text-center px-2 py-1 rounded-lg">
@@ -134,10 +134,10 @@ const Review = () => {
           variants={imageVariants}
           initial="initial"
           animate={mainControls}
-          transition={{ delay: 0.1 }}
+          transition={{ delay: 0.1,ease: "easeInOut" }}
           src="https://framerusercontent.com/images/jWaPzh2D1RpJ1LMTCgj6fboghRI.jpg"
           alt="reviewimage"
-          className="select-none w-[400px] h-[200px] rounded-3xl"
+          className="select-none w-[350px] md:w-[400px] h-[200px] rounded-3xl"
         />
         <motion.svg
           ref={ref}
@@ -161,11 +161,11 @@ const Review = () => {
           initial="initial"
           animate={mainControls}
           transition={{ delay: 0.5, ease: "easeInOut" }}
-          className="bg-[#f1f3f5] absolute -top-[27%] right-[67%] rounded-full p-2 rotate-2"
+          className="bg-[#f1f3f5] absolute -top-[20%] md:-top-[27%] right-[50%] md:right-[67%] rounded-full p-2 rotate-2"
         >
           <span className="text-2xl font-semibold select-none flex items-center justify-center">
             &#128293;
-            <p className="text-sm m-1">
+            <p className="text-xs md:text-sm m-1">
               DM US &#128525; @Designz4lyfe &#11088;
             </p>
           </span>
@@ -176,15 +176,15 @@ const Review = () => {
           initial="initial"
           animate={mainControls}
           transition={{ delay: 0.7, ease: "easeInOut" }}
-          className="bg-[#f1f3f5] absolute bottom-0 translate-y-10 right-[3%] rounded-full px-4 py-2 rotate-3"
+          className="bg-[#f1f3f5] absolute bottom-0 translate-y-10 right-[3.5%] md:right-[3%] rounded-full px-2 md:px-4 py-2 rotate-3"
         >
           <span className="text-2xl font-semibold select-none flex items-center justify-center gap-2">
             <img
               src="https://framerusercontent.com/images/sP0zSZJnDxp1xg16x2GrGAWj1ag.png"
               alt=""
               className="w-7 h-7 rounded-full"
-            />{" "}
-            <span className="text-sm m-1">What do you think of my work???</span>
+            />
+            <span className="text-xs md:text-sm m-1">What do you think of my work???</span>
           </span>
         </motion.div>
         <motion.div
@@ -193,11 +193,11 @@ const Review = () => {
           initial="initial"
           animate={mainControls}
           transition={{ delay: 1.3, ease: "easeInOut" }}
-          className="bg-[#f1f3f5] absolute bottom-0 translate-y-8 right-[63%] rounded-full px-4 py-2 -rotate-3"
+          className="bg-[#f1f3f5] absolute bottom-10 md:bottom-0 right-[28%] md:right-[63%] rounded-full px-3 md:px-4 py-2 -rotate-3"
         >
           <span className="flex items-center justify-center text-2xl font-bold gap-2">
             &#128525;
-            <div className="text-sm">
+            <div className="text-xs md:text-sm">
               <p>Good, dear friends pls rate my artwork:</p>
               <p>https://nfts4everyone.com/token/0x60f801a</p>
             </div>
@@ -209,7 +209,7 @@ const Review = () => {
           initial="initial"
           animate={mainControls}
           transition={{ delay: 1.1, ease: "easeInOut" }}
-          className="bg-[#f1f3f5] absolute top-10 left-[0%] translate-x-5 rounded-full px-4 py-2 -rotate-3"
+          className="bg-[#f1f3f5] absolute top-10 left-[2%] md:left-[0%] translate-x-5 rounded-full px-4 py-2 -rotate-3"
         >
           <span className="flex items-center justify-center gap-2">
             <img
@@ -217,7 +217,7 @@ const Review = () => {
               alt=""
               className="w-7 h-7 rounded-full"
             />
-            <span className="font-bold">I guess it's cool</span>
+            <span className="text-xs md:text-sm font-bold">I guess it's cool</span>
           </span>
         </motion.div>
         <motion.div
@@ -226,10 +226,10 @@ const Review = () => {
           initial="initial"
           animate={mainControls}
           transition={{ delay: 1.1, ease: "easeInOut" }}
-          className="bg-[#f1f3f5] absolute right-[12%] translate-y-5 rounded-full px-4 py-2 -rotate-3"
+          className="bg-[#f1f3f5] absolute right-[1%] md:right-[12%] bottom-24 rounded-full px-4 py-2 -rotate-3"
         >
           <span className="flex items-center justify-center gap-1 text-2xl">
-            &#128529;<p className="font-bold text-sm">I don't get it</p>
+            &#128529;<p className="font-bold text-xs md:text-sm">I don't get it</p>
           </span>
         </motion.div>
         <motion.div
@@ -246,7 +246,7 @@ const Review = () => {
               alt=""
               className="w-7 h-7 rounded-full"
             />
-            <span className="font-semibold text-sm">
+            <span className="font-semibold text-xs md:text-sm">
               AMAZING!!! &#128293;&#128525; Promote it on &#128073;
               @ART.online_WORLD
             </span>
@@ -262,7 +262,7 @@ const Review = () => {
         >
           <span className="flex items-center justify-center gap-2 text-2xl">
             &#128064;
-            <p className="font-bold text-sm">Is this the newest version?</p>
+            <p className="font-bold text-xs md:text-sm">Is this the newest version?</p>
           </span>
         </motion.div>
       </div>

@@ -24,10 +24,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-gradient-to-b from-[#271c45] via-[#4d4dff] to-[#00caf2] rounded-2xl mx-auto max-w-[95%]">
+    <div className="bg-gradient-to-b from-[#271c45] via-[#4d4dff] to-[#00caf2] rounded-2xl mx-auto max-w-[95%] py-5">
       <div className="flex items-center justify-evenly p-10">
         <div className="space-y-7">
-          <h2 className="text-white text-4xl font-black w-1/2">
+          <h2 className="text-white text-xl md:text-4xl font-black w-1/2">
             Share more. Build better.
           </h2>
           <motion.div
@@ -69,7 +69,7 @@ const Contact = () => {
             </div>
           </motion.div>
         </div>
-        <div className="relative top-10">
+        <div className="hidden md:block relative top-10">
           <img
             src="https://framerusercontent.com/images/NdI7XlqHo5PV4fpjJ17mkXT0vs.png"
             alt=""

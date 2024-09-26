@@ -34,7 +34,7 @@ const UseCases = () => {
     }
   }, [isInView, mainControls]);
   return (
-    <div className="mx-auto max-w-[90rem] bg-[#f1f3f5] rounded-3xl p-10">
+    <div className="mx-auto max-w-[90rem] bg-[#f1f3f5] md:rounded-3xl p-10">
       <div className="space-y-7 p-4">
         <div className="flex items-center justify-center">
           <p className="uppercase text-sm font-semibold text-[#4d4dff] bg-[#4d4dff26] text-center px-2 py-1 rounded-lg">
@@ -46,7 +46,7 @@ const UseCases = () => {
             Groups designed for public and private uses
           </h2>
         </div>
-        <div className="flex items-center justify-center gap-7">
+        <div className="grid md:flex md:items-center grid-cols-2 md:justify-center gap-3 md:gap-7">
           <motion.div
             ref={ref}
             initial="initial"
@@ -128,7 +128,7 @@ const UseCases = () => {
           <img
             src="https://framerusercontent.com/images/iik5zUNIaDVrTRg4dMo6AlEJDYE.png"
             alt=""
-            className="w-[950px] h-[800px] object-cover rounded-xl select-none"
+            className="md:w-[950px] md:h-[800px] object-contain rounded-xl select-none"
           />
         </motion.div>
       </div>

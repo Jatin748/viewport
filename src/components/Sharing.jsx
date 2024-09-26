@@ -35,7 +35,7 @@ const Sharing = () => {
     },
   };
   return (
-    <div className="mx-auto max-w-4xl space-y-7">
+    <div className="mx-auto max-w-4xl space-y-7 hidden md:block">
       <div className="space-y-7 p-4">
         <div className="flex items-center justify-center">
           <p className="uppercase text-sm font-semibold text-[#4d4dff] bg-[#4d4dff26] text-center px-2 py-1 rounded-lg">
@@ -49,8 +49,7 @@ const Sharing = () => {
         </div>
       </div>
       {/* second part start */}
-      <motion.div 
-      className="flex gap-10 text-center">
+      <motion.div className="md:flex gap-10 text-center max-w-sm md:max-w-full mx-auto space-y-7 md:space-y-0">
         <motion.div
           initial="initial"
           animate="initial"
@@ -99,7 +98,7 @@ const Sharing = () => {
           <motion.div
             variants={imageAnimation}
             transition={{ duration: 0.5, ease: "backOut" }}
-            className="space-y-4 absolute w-[13%]"
+            className="space-y-4 absolute w-[60%] md:w-[13%]"
           >
             <div className="bg-white rounded-xl py-2 px-4 space-y-2">
               <div className="bg-[#c8c9cf] h-2 rounded-xl"></div>
@@ -111,7 +110,7 @@ const Sharing = () => {
           <motion.div
             variants={divAnimation}
             transition={{ duration: 0.5, ease: "backOut" }}
-            className="relative left-10 bottom-14 origin-top-left"
+            className="relative left-32 md:left-10 bottom-14 origin-top-left"
           >
             <div className="bg-[#4d4dff] w-24 h-24 rounded-xl -rotate-12 absolute top-[180px] left-16 shadow-lg"></div>
             <div className="bg-[#a795fd] w-24 h-24 rounded-xl rotate-9 absolute top-[170px] left-24 shadow-lg"></div>

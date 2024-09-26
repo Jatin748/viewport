@@ -16,7 +16,7 @@ const Solution = () => {
   }, [isInView, mainControls]);
 
   return (
-    <section className="mx-auto max-w-[90rem] bg-[#f1f3f5] rounded-3xl p-10">
+    <section className="mx-auto max-w-[90rem] bg-[#f1f3f5] md:rounded-3xl p-10">
       <div className="space-y-8 mx-auto max-w-2xl">
         <div className="flex items-center justify-center">
           <p className="uppercase text-sm font-semibold text-[#4d4dff] bg-[#4d4dff26] text-center px-2 py-1 rounded-lg">
@@ -31,13 +31,13 @@ const Solution = () => {
       </div>
       <div className="mx-auto max-w-4xl mt-16 space-y-20">
         <AnimatedDiv>
-          <motion.div className="bg-white flex items-center justify-around rounded-2xl py-5">
+          <motion.div className="bg-white md:flex items-center justify-around rounded-2xl md:py-5">
             <img
               src="https://framerusercontent.com/images/WAGny5hdCqXGEKkE5iO2x3catI.png"
               alt=""
-              className="rounded-2xl w-[400px] h-[300px] object-cover"
+              className="rounded-t-2xl md:rounded-2xl w-[410px] md:w-[400px] h-[300px] object-cover"
             />
-            <div className="w-[40%] space-y-3">
+            <div className="md:w-[40%] space-y-3 p-5">
               <p className="uppercase text-[#4d4dff] font-bold text-sm">
                 quick post
               </p>
@@ -52,8 +52,8 @@ const Solution = () => {
           </motion.div>
         </AnimatedDiv>
         <AnimatedDiv>
-          <motion.div className="bg-white flex items-center justify-around rounded-2xl py-5">
-            <div className="w-[42%] space-y-3">
+          <motion.div className="bg-white md:flex md:flex-row flex-col-reverse items-center justify-around rounded-2xl md:py-5">
+            <div className="md:w-[42%] space-y-3 p-5">
               <p className="uppercase text-[#4d4dff] font-bold text-sm">
                 projects
               </p>
@@ -68,18 +68,18 @@ const Solution = () => {
             <img
               src="https://framerusercontent.com/images/r5LrPPIdcGzUrxBLz9qhO4R1W5Q.png"
               alt=""
-              className="rounded-2xl w-[400px] h-[300px] object-cover"
+              className="rounded-b-2xl md:rounded-2xl w-[410px] md:w-[400px] h-[300px] object-cover"
             />
           </motion.div>
         </AnimatedDiv>
         <AnimatedDiv>
-          <motion.div className="bg-white flex items-center justify-around rounded-2xl py-5">
+          <motion.div className="bg-white md:flex items-center justify-around rounded-2xl md:py-5">
             <img
               src="https://framerusercontent.com/images/IexoxOid4nUDDbpaF046ZOe5I.png"
               alt=""
-              className="rounded-2xl w-[400px] h-[300px] object-cover"
+              className="rounded-t-2xl md:rounded-2xl w-[410px] md:w-[400px] h-[300px] object-cover"
             />
-            <div className="w-[40%] space-y-3">
+            <div className="md:w-[40%] space-y-3 p-5">
               <p className="uppercase text-[#4d4dff] font-bold text-sm">
                 feedback
               </p>
@@ -94,8 +94,8 @@ const Solution = () => {
           </motion.div>
         </AnimatedDiv>
         <AnimatedDiv>
-          <motion.div className="bg-white flex items-center justify-around rounded-2xl py-5">
-            <div className="w-[42%] space-y-3">
+          <motion.div className="bg-white md:flex items-center justify-around rounded-2xl md:py-5">
+            <div className="md:w-[42%] space-y-3 p-5">
               <p className="uppercase text-[#4d4dff] font-bold text-sm">
                 privacy
               </p>
@@ -110,7 +110,7 @@ const Solution = () => {
             <img
               src="https://framerusercontent.com/images/3mVbeesA5gMUBMO2IdvwfHam98.png"
               alt=""
-              className="rounded-2xl w-[400px] h-[300px] object-cover"
+              className="rounded-b-2xl md:rounded-2xl w-[410px] md:w-[400px] h-[300px] object-cover"
             />
           </motion.div>
         </AnimatedDiv>
